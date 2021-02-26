@@ -53,5 +53,8 @@ de_genes <- results(dds,
 de_genes$gene_symbol <-
   rowData(gse)$SYMBOL[match(de_genes$gene_id, rowData(gse)$gene_id)]
 
+## Change data name
+monoMacroDEGHg19 <- de_genes
+
 ## Save results to a file
-save(de_genes, file = "data/mono_macro_diff_genes_hg19.rda")
+save(monoMacroDEGHg19, file = "data/monoMacroDEGHg19.rda")

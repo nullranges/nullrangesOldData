@@ -39,5 +39,8 @@ chipPeaks$peakStrength <-
   as.matrix %>%
   rowSums()
 
+## Change data name
+H3K27acPeakCountsHg38 <- chipPeaks
+
 ## Save results to a file
-save(chipPeaks, file = "data/h3k27ac_peak_counts.rda")
+save(H3K27acPeakCountsHg38, file = "data/H3K27acPeakCountsHg38.rda")
