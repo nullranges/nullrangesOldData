@@ -1,0 +1,8 @@
+.DS_Store
+.Rproj.user
+.Rhistory
+nullrangesData.Rproj
+inst/extdata/rna/hg19
+inst/extdata/rna/quants
+inst/extdata/rna/mono_macro_diff.tgz
+*.hic
