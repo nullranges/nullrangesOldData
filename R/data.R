@@ -64,3 +64,20 @@
 #' https://zenodo.org/record/4484319#.YBdM2NZOmEI
 #' 
 "monoMacroDEGHg38"
+
+#' nullranges enhancer-promoter contact frequency example data
+#'
+#' An example dataset containing the interaction frequencies between all putative enhancer-promoter (E-P) pairs within 2Mb. Promoter regions from the monoMacroDEGHg19 dataset and enhancer regions from the H3K27acPeakCountsHg19 dataset were paired within 2Mb regions around gene promoters. E-P pairs were then assigned to the appropriate Hi-C bin at 10kb resolution, taking the center point of each enhancer and the TSS of each promoter. Interaction frequencies between each E-P pair were extracted from bioreps of monocyte (NON_1_hic, NON_2_hic) and macrophage (PMA_1_hic, PMA_2_hic) Hi-C files. Total contact frequency and E-P distance were also calculated. Returned is a GInteractions object with all putative E-P pairs along with their contact frequencies. Analysis script is in 'inst/script/enhPromContactFreqHg19.R'.
+#' 
+#' 
+#' @format a GInteractions object with metadata contact frequencies and E-P distance.
+#' 
+#' @docType data
+#' 
+#' @usage data("enhPromContactFreqHg19")
+#' 
+#' 
+#' @references 
+#' Phanstiel, Douglas H., Kevin Van Bortle, Damek Spacek, Gaelen T. Hess, Muhammad Saad Shamim, Ido Machol, Michael I. Love, Erez Lieberman Aiden, Michael C. Bassik, and Michael P. Snyder. 2017. “Static and Dynamic DNA Loops Form AP-1-Bound Activation Hubs during Macrophage Development.” Molecular Cell 67 (6): 1037–48.e6.
+#' 
+"enhPromContactFreqHg19"
