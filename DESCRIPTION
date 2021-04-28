@@ -8,6 +8,7 @@ Authors@R: c(
       comment = c(ORCID = "0000-0001-8401-0545"))
     )
 Description: What the package does (one paragraph).
+Depends: R (>= 3.5.0)
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
