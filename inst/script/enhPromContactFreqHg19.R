@@ -52,7 +52,8 @@ binnedEP <- extractCounts(bedpe = binnedEP,
                                   "../hic/CI_THP1_A_1_inter_30.hic",
                                   "../hic/CI_THP1_A_2_inter_30.hic"),
                           chroms = c(1:22,'X','Y'),
-                          res = 10000)
+                          res = 10000,
+                          norm = 'KR')
 
 ## Add individual biorep contact frequencies to enhPromPairs
 enhPromPairs$NON_1_hic <- mcols(binnedEP)[["CI_THP1_O_1_inter_30.hic"]]
