@@ -1,6 +1,6 @@
 Package: nullrangesData
 Title: Datasets for the nullranges package
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: c(
     person("Michael", "Love",
       role = c("aut", "cre"),
