@@ -5,7 +5,7 @@
 \alias{deny}
 \title{ENCODE Unified GRCh38 Exclusion List (previously "blacklist")}
 \format{
-a GInteractions object with metadata contact frequencies and E-P distance.
+a GRanges object
 }
 \usage{
 data("deny")
