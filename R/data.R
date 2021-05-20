@@ -155,3 +155,31 @@
 #' package version 0.99.0, <URL: https://github.com/mdozmorov/CTCF>.
 #' 
 "CTCF_hg19"
+
+#' CTCF-bound 10Kb paired genomic interactions
+#'
+#' 10Kb bins were tiled across hg19 and annotated with CTCF and DNase site features from GM12878. Feature annotations for each bin include 1) the number of CTCF sites, 2) the CTCF signal strength (from peak calls), 3) the number of DNase sites, 4) the DNase signal strength (from signal tracks), and finally 5) the presence/absence of a loop to any other bin.
+#'
+#' 
+#' @format a GRanges object with covariate metadata
+#' 
+#' @docType data
+#' 
+#' @usage data("hg19_10kb_bins")
+#' 
+#' 
+"hg19_10kb_bins"
+
+#' CTCF-bound 10Kb paired genomic interactions
+#'
+#' 10Kb bins were tiled across hg19 then subset by those which contained CTCF sites. All pairs of CTCF-bound 10Kb bins were generated and annotated with feature overlaps from GM12878. Feature annotations include 1) presence/absence of a loop between bin-pairs, 2) the total CTCF signal from both bin-pairs, 3) the number of CTCF sites from both bin-pairs, 4) the distance between bin-pairs, and finally 4) whether a convergent set of CTCF sites exists between bin-pairs.
+#' 
+#' 
+#' @format a GInteractions object with covariate metadata
+#' 
+#' @docType data
+#' 
+#' @usage data("hg19_10kb_ctcfBoundBinPairs")
+#' 
+#' 
+"hg19_10kb_ctcfBoundBinPairs"
