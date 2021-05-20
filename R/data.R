@@ -134,3 +134,24 @@
 #' @usage data("DHSA549Hg38")
 #' 
 "DHSA549Hg38"
+
+#' Predicted CTCF-motif binding sites
+#'
+#' Genomic coordinates of predicted CTCF binding sites with motif MA0139.1 (Jaspar), in BED format, with strand orientation (directionality of binding). Human (hg19, hg38) and mouse (mm9, mm10) genomes. The binding sites were detected using the FIMO tool of the MEME suite using default settings. Extra columns include motif name (MA0139.1), score, p-value, q-value, and the motif sequence.
+#' 
+#' Experimental, to be submitted as an AnnotatiohHub Bioconductor package.
+#' 
+#' 
+#' 
+#' @format a GRanges object
+#' 
+#' @docType data
+#' 
+#' @usage data("CTCF_hg19")
+#' 
+#' 
+#' @references 
+#' Dozmorov MG (2021). _CTCF_. https://github.com/mdozmorov/CTCF/CTCF - R
+#' package version 0.99.0, <URL: https://github.com/mdozmorov/CTCF>.
+#' 
+"CTCF_hg19"
