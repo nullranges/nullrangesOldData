@@ -96,6 +96,10 @@ binPairs$ctcfSignal <- log2(a1$ctcfSignal + a2$ctcfSignal + 1)
 
 ## Add total number of CTCF sites from both anchors
 binPairs$n_sites <- a1$n_sites + a2$n_sites
+binPairs$n_sites <- cut(x = binPairs$n_sites,
+                        include.lowest = TRUE,
+                        breaks = c(-Inf, 0, 1, 2, 3, 4, 5, 6, Inf),
+                        labels = c("0", "1", "2", "3", "4", "5", "6", "7+"))
 
 ## Distance
 binPairs$distance <- pairdist(binPairs)

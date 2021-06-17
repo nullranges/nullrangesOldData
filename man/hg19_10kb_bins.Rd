@@ -3,7 +3,7 @@
 \docType{data}
 \name{hg19_10kb_bins}
 \alias{hg19_10kb_bins}
-\title{CTCF-bound 10Kb paired genomic interactions}
+\title{10Kb bins from hg19 with GM12878 metadata annotation features}
 \format{
 a GRanges object with covariate metadata
 }

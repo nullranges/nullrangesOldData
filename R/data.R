@@ -156,7 +156,7 @@
 #' 
 "CTCF_hg19"
 
-#' CTCF-bound 10Kb paired genomic interactions
+#' 10Kb bins from hg19 with GM12878 metadata annotation features
 #'
 #' 10Kb bins were tiled across hg19 and annotated with CTCF and DNase site features from GM12878. Feature annotations for each bin include 1) the number of CTCF sites, 2) the CTCF signal strength (from peak calls), 3) the number of DNase sites, 4) the DNase signal strength (from signal tracks), and finally 5) the presence/absence of a loop to any other bin.
 #'
