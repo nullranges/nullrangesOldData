@@ -6,15 +6,18 @@ library(plyranges)
 library(magrittr)
 library(data.table)
 
+## Load helper functions
+source("inst/script/util.R")
+
 ## Loading and formatting data -----------------------------------------------------------
 
 ## GM12878 loop calls
 loops <-
   "inst/extdata/hic/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist.txt.gz" %>%
   fread() %>%
-  hictoolsr::as_ginteractions(keep.extra.columns = FALSE) %>%
+  as_ginteractions(keep.extra.columns = FALSE) %>%
   GenomeInfoDb::`seqlevelsStyle<-`("UCSC") %>%
-  hictoolsr::binBedpe(res = 10e3, a1Pos = 'center', a2Pos = 'center') %>%
+  binBedpe(res = 10e3, a1Pos = 'center', a2Pos = 'center') %>%
   unique()
 
 ## Adjust for 0-based start positions
@@ -55,7 +58,7 @@ bins <-
 bins <- subsetByOverlaps(bins, ctcfMotifs)
 
 ## Calculate all ctcf-bound bin-pairs within 1Mb
-binPairs <- hictoolsr::calcPairs(gr = bins, windowSize = 1e6, mode = 'strict')
+binPairs <- calcPairs(gr = bins, windowSize = 1e6, mode = 'strict')
 
 
 ## Annotating features -------------------------------------------------------------------

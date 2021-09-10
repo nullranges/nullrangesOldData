@@ -5,15 +5,18 @@ library(data.table)
 library(plyranges)
 library(InteractionSet)
 
+## Load helper functions
+source("inst/script/util.R")
+
 ## Load data -----------------------------------------------------------------------------
 
 ## GM12878 loop calls
 loops <-
   "inst/extdata/hic/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist.txt.gz" %>%
   fread() %>%
-  hictoolsr::as_ginteractions(keep.extra.columns = FALSE) %>%
+  as_ginteractions(keep.extra.columns = FALSE) %>%
   GenomeInfoDb::`seqlevelsStyle<-`("UCSC") %>%
-  hictoolsr::binBedpe(res = 10e3, a1Pos = 'center', a2Pos = 'center') %>%
+  binBedpe(res = 10e3, a1Pos = 'center', a2Pos = 'center') %>%
   unique()
 
 ## Adjust for 0-based start positions
