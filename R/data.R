@@ -15,13 +15,13 @@
 #' 
 #' @docType data
 #' 
-#' @usage data("deny")
+#' @usage data("exclude")
 #' 
-"deny"
+"exclude"
 
 #' nullranges DNase hypersensitivity peaks in A549 cell example data
 #'
-#' An example dataset containing narrowPeak file from ENCODE. Retrieve record with 'object[["AH22505"]]' on Annotation Hub. Analysis script is in 'inst/script/DHSA549Hg38.R'.
+#' An example dataset containing narrowPeak file from ENCODE. Retrieve record with \code{object[["AH22505"]]} on Annotation Hub. Analysis script is in 'inst/script/DHSA549Hg38.R'.
 #' 
 #' @format a GRanges object with metadata score, signal value, p/q value and peak.
 #' 

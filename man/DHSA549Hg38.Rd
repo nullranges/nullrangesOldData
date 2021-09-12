@@ -11,6 +11,6 @@ a GRanges object with metadata score, signal value, p/q value and peak.
 data("DHSA549Hg38")
 }
 \description{
-An example dataset containing narrowPeak file from ENCODE. Retrieve record with 'object[\link{"AH22505"}]' on Annotation Hub. Analysis script is in 'inst/script/DHSA549Hg38.R'.
+An example dataset containing narrowPeak file from ENCODE. Retrieve record with \code{object[["AH22505"]]} on Annotation Hub. Analysis script is in 'inst/script/DHSA549Hg38.R'.
 }
 \keyword{datasets}
