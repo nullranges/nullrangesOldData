@@ -16,7 +16,7 @@ and CTCF genomic interactions.
 ```{r}
 library(nullrangesData)
 suppressPackageStartupMessages(library(GenomicRanges))
-o))
+suppressPackageStartupMessages(library(InteractionSet))
 ```
 
 Excluded regions (see `?exclude` for details).
@@ -43,8 +43,6 @@ data("hg19_10kb_ctcfBoundBinPairs")
 CTCF_hg19
 hg19_10kb_bins
 ```
-
-
 
 # Session information
 

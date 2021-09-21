@@ -3,9 +3,10 @@
 \docType{data}
 \name{DHSA549Hg38}
 \alias{DHSA549Hg38}
-\title{nullranges DNase hypersensitivity peaks in A549 cell example data}
+\title{DNase hypersensitivity (DHS) peaks in A549 cell example data}
 \format{
-a GRanges object with metadata score, signal value, p/q value and peak.
+a GRanges object with metadata score, signal value,
+p/q value and peak.
 }
 \usage{
 data("DHSA549Hg38")

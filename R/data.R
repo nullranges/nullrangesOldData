@@ -11,7 +11,7 @@
 #' @docType data
 #' 
 #' @usage data("exclude")
-#' 
+#' @import GenomicRanges
 "exclude"
 
 #' DNase hypersensitivity (DHS) peaks in A549 cell example data
@@ -85,6 +85,6 @@
 #' @docType data
 #' 
 #' @usage data("hg19_10kb_ctcfBoundBinPairs")
-#' 
+#' @import InteractionSet
 #' 
 "hg19_10kb_ctcfBoundBinPairs"

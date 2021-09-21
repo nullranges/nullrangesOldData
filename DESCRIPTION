@@ -15,14 +15,20 @@ Authors@R: c(
 Description: Provides datasets for the nullranges package vignette,
     in particular example datasets for exclusion regions,
     DNase hypersensitivity sites (DHS), CTCF binding sites,
-    and CTCF genomic interactions.
+    and CTCF genomic interactions. These are used to demonstrate
+    generation of null hypothesis feature sets, either through
+    block bootstrapping or matching, in the nullranges vignette.
+    For more details, see the data object man pages, and the
+    R scripts for object construction provided within the package.
 Depends: R (>= 4.1.0),
     GenomicRanges,
     InteractionSet
-biocViews: GenomeAnnotation, Annotation
+Suggests: knitr,
+    rmarkdown
+biocViews: ExperimentData, Homo_sapiens_Data,
+    SequencingData, ChIPSeqData
 License: GPL-3
 Encoding: UTF-8
-LazyDataCompression: xz
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
