@@ -1,13 +1,17 @@
 Package: nullrangesData
 Title: Datasets for the nullranges package
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(
     person("Michael", "Love",
       role = c("aut", "cre"),
       email = "michaelisaiahlove@gmail.com",
-      comment = c(ORCID = "0000-0001-8401-0545"))
-    )
-Description: What the package does (one paragraph).
+      comment = c(ORCID = "0000-0001-8401-0545")),
+    person("Wancen", "Mu", role = c("aut"),
+      comment = c(ORCID = "0000-0002-5061-7581")),
+    person("Eric", "Davis", role = c("aut"),
+      comment = c(ORCID = "0000-0003-4051-3217"))
+      )
+Description: Provides datasets for the nullranges package vignette.
 Depends: R (>= 3.5.0)
 Imports:
     GenomicRanges,
