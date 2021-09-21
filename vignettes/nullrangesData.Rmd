@@ -1,0 +1,53 @@
+---
+title: "nullrangesData package"
+output:
+  rmarkdown::html_document
+vignette: |
+  %\VignetteIndexEntry{nullrangesData package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+The *nullrangesData* package provides datasets for the *nullranges*
+package vignette, in particular example datasets for exclusion
+regions, DNase hypersensitivity sites (DHS), CTCF binding sites,
+and CTCF genomic interactions.
+
+```{r}
+library(nullrangesData)
+suppressPackageStartupMessages(library(GenomicRanges))
+o))
+```
+
+Excluded regions (see `?exclude` for details).
+
+```{r}
+data("exclude")
+exclude
+```
+
+A549 DHS peaks (see `?DHSA549Hg38` for details).
+
+```{r}
+data("DHSA549Hg38")
+DHSA549Hg38
+```
+
+CTCF binding sites, 10kb bins with CTCF and DHS peaks, and CTCF-bound
+genomics interactions. See corresponding man pages for details.
+
+```{r}
+data("CTCF_hg19")
+data("hg19_10kb_bins")
+data("hg19_10kb_ctcfBoundBinPairs")
+CTCF_hg19
+hg19_10kb_bins
+```
+
+
+
+# Session information
+
+```{r}
+sessionInfo()
+```

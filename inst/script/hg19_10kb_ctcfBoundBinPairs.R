@@ -116,4 +116,4 @@ binPairs$convergent[(a1$hasPlus & a2$hasMinus) |
 hg19_10kb_ctcfBoundBinPairs <- binPairs
 
 ## Save results to a file
-save(hg19_10kb_ctcfBoundBinPairs, file = "data/hg19_10kb_ctcfBoundBinPairs.rda")
+save(hg19_10kb_ctcfBoundBinPairs, file = "data/hg19_10kb_ctcfBoundBinPairs.rda", compress = "xz")

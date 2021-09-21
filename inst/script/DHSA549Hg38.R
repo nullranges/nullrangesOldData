@@ -14,4 +14,4 @@ DHSA549Hg38 <- sortSeqlevels(DHSA549Hg38)
 DHSA549Hg38 <- sort(DHSA549Hg38)
 table(seqnames(DHSA549Hg38))
 
-save(DHSA549Hg38, file = "data/DHSA549Hg38.rda")
+save(DHSA549Hg38, file = "data/DHSA549Hg38.rda", compress = "xz")

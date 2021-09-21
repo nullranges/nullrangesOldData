@@ -6,4 +6,4 @@ exclude <- sortSeqlevels(exclude)
 exclude <- sort(exclude)
 table(seqnames(exclude))
 
-save(exclude, file = "data/exclude.rda")
+save(exclude, file = "data/exclude.rda", compress = "xz")

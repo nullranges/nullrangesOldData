@@ -112,4 +112,4 @@ bins$looped[countOverlaps(bins, loops, type = 'within') >= 1] <- TRUE
 hg19_10kb_bins <- bins
 
 ## Save results to a file
-save(hg19_10kb_bins, file = "data/hg19_10kb_bins.rda")
+save(hg19_10kb_bins, file = "data/hg19_10kb_bins.rda", compress = "xz")

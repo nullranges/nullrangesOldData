@@ -1,6 +1,6 @@
 Package: nullrangesData
 Title: Datasets for the nullranges package
-Version: 0.0.4
+Version: 0.0.5
 Authors@R: c(
     person("Michael", "Love",
       role = c("aut", "cre"),
@@ -12,13 +12,17 @@ Authors@R: c(
       comment = c(ORCID = "0000-0003-4051-3217")),
     person("Mikhail", "Dozmorov", role = c("aut"))
       )
-Description: Provides datasets for the nullranges package vignette.
-Depends: R (>= 3.5.0)
-Imports:
+Description: Provides datasets for the nullranges package vignette,
+    in particular example datasets for exclusion regions,
+    DNase hypersensitivity sites (DHS), CTCF binding sites,
+    and CTCF genomic interactions.
+Depends: R (>= 4.1.0),
     GenomicRanges,
-    InteractionSet,
+    InteractionSet
+biocViews: GenomeAnnotation, Annotation
 License: GPL-3
 Encoding: UTF-8
-LazyData: true
+LazyDataCompression: xz
+VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
