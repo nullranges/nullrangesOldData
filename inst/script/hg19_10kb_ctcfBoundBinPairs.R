@@ -13,7 +13,7 @@ source("inst/script/util.R")
 
 ## GM12878 loop calls
 loops <-
-  "inst/extdata/hic/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist.txt.gz" %>%
+  "inst/extdata/GSE63525_GM12878_primary+replicate_HiCCUPS_looplist.txt.gz" %>%
   fread() %>%
   as_ginteractions(keep.extra.columns = FALSE) %>%
   GenomeInfoDb::`seqlevelsStyle<-`("UCSC") %>%

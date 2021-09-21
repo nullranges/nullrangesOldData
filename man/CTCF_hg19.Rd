@@ -11,10 +11,13 @@ a GRanges object
 data("CTCF_hg19")
 }
 \description{
-Genomic coordinates of predicted CTCF binding sites with motif MA0139.1 (Jaspar), in BED format, with strand orientation (directionality of binding). Human (hg19, hg38) and mouse (mm9, mm10) genomes. The binding sites were detected using the FIMO tool of the MEME suite using default settings. Extra columns include motif name (MA0139.1), score, p-value, q-value, and the motif sequence.
-}
-\details{
-Experimental, to be submitted as an AnnotatiohHub Bioconductor package.
+Genomic coordinates of predicted CTCF binding sites with motif
+MA0139.1 (Jaspar), in BED format, with strand orientation
+(directionality of binding). Human (hg19, hg38) and mouse (mm9,
+mm10) genomes. The binding sites were detected using the FIMO tool
+of the MEME suite using default settings. Extra columns include
+motif name (MA0139.1), score, p-value, q-value, and the motif
+sequence.
 }
 \references{
 Dozmorov MG (2021). \emph{CTCF}. https://github.com/mdozmorov/CTCF/CTCF - R

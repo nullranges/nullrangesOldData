@@ -11,6 +11,13 @@ a GInteractions object with covariate metadata
 data("hg19_10kb_ctcfBoundBinPairs")
 }
 \description{
-10Kb bins were tiled across hg19 then subset by those which contained CTCF sites. All pairs of CTCF-bound 10Kb bins were generated and annotated with feature overlaps from GM12878. Feature annotations include 1) presence/absence of a loop between bin-pairs, 2) the total CTCF signal from both bin-pairs, 3) the number of CTCF sites from both bin-pairs, 4) the distance between bin-pairs, and finally 4) whether a convergent set of CTCF sites exists between bin-pairs.
+10Kb bins were tiled across hg19 then subset by those which
+contained CTCF sites. All pairs of CTCF-bound 10Kb bins were
+generated and annotated with feature overlaps from GM12878. Feature
+annotations include 1) presence/absence of a loop between
+bin-pairs, 2) the total CTCF signal from both bin-pairs, 3) the
+number of CTCF sites from both bin-pairs, 4) the distance between
+bin-pairs, and finally 4) whether a convergent set of CTCF sites
+exists between bin-pairs.
 }
 \keyword{datasets}

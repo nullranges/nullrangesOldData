@@ -5,7 +5,6 @@ pks <- query(ah, c("DnaseSeq", "narrowPeak", "A549", "UniPk"))[[1]]
 pks <- keepStandardChromosomes(pks)
 seqlevels(pks) <- setdiff(seqlevels(pks), "chrM")
 
-# hg19tohg38 <- import.chain("inst/extdata/hg19ToHg38.over.chain")
 ahub.chain <- subset(ah, rdataclass == "ChainFile" & species == "Homo sapiens")
 chain <- ahub.chain[ahub.chain$title == "hg19ToHg38.over.chain.gz"]
 chain <- chain[[1]]

@@ -11,6 +11,11 @@ a GRanges object with covariate metadata
 data("hg19_10kb_bins")
 }
 \description{
-10Kb bins were tiled across hg19 and annotated with CTCF and DNase site features from GM12878. Feature annotations for each bin include 1) the number of CTCF sites, 2) the CTCF signal strength (from peak calls), 3) the number of DNase sites, 4) the DNase signal strength (from signal tracks), and finally 5) the presence/absence of a loop to any other bin.
+10Kb bins were tiled across hg19 and annotated with CTCF and DNase
+site features from GM12878. Feature annotations for each bin
+include 1) the number of CTCF sites, 2) the CTCF signal strength
+(from peak calls), 3) the number of DNase sites, 4) the DNase
+signal strength (from signal tracks), and finally 5) the
+presence/absence of a loop to any other bin.
 }
 \keyword{datasets}

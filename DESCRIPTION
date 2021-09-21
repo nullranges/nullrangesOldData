@@ -1,6 +1,6 @@
 Package: nullrangesData
 Title: Datasets for the nullranges package
-Version: 0.0.3
+Version: 0.0.4
 Authors@R: c(
     person("Michael", "Love",
       role = c("aut", "cre"),
@@ -9,7 +9,8 @@ Authors@R: c(
     person("Wancen", "Mu", role = c("aut"),
       comment = c(ORCID = "0000-0002-5061-7581")),
     person("Eric", "Davis", role = c("aut"),
-      comment = c(ORCID = "0000-0003-4051-3217"))
+      comment = c(ORCID = "0000-0003-4051-3217")),
+    person("Mikhail", "Dozmorov", role = c("aut"))
       )
 Description: Provides datasets for the nullranges package vignette.
 Depends: R (>= 3.5.0)
